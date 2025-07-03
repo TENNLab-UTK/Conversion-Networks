@@ -65,7 +65,7 @@ In Figure 3 of the paper, we present a simple network to convert a value represe
 spike train, to a neuron that stores its value in its potential.  We present storing both
 the value and its complement.   Here are the two networks:
 
-![jpg/figure-03.jpg](jpg.figure-03.jpg)
+![jpg/figure-03.jpg](jpg/figure-03.jpg)
 
 Now, what we're going to do is demonstrate how the networks work.  I'm going to do this
 with some shell scripts that create networks using the `network_tool` from the 
