@@ -2,4 +2,4 @@
 
 This is Figure 7 in the paper:
 
-![jpg/figure_7.jpg](jpg/figure_7.jpg)
+![../jpg/figure_7.jpg](../jpg/figure_7.jpg)
