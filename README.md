@@ -6,6 +6,14 @@ This repo is a companion to the paper, "Converting Between Times, Values and Spi
 if/when the paper is accepted for publication and published.
 
 ------------------------------------------------------------
+## Markdown Files and Videos
+
+I have the information about these networks and examples of running them in markdown files
+and videos.  They are as follows:
+
+- `V_{train} -> V_{value}` and `V_{train} -> C_{value}`: This README and the video in [X](x).
+
+------------------------------------------------------------
 ## Purpose of these Networks
 
 There are three techniques (among many) to store and communicate values in spiking neural networks:
