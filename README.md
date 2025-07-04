@@ -12,6 +12,8 @@ I have the information about these networks and examples of running them in mark
 and videos.  They are as follows:
 
 - `V_{train} -> V_{value}` and `V_{train} -> C_{value}`: This README and the video in [X](x).
+- `V_{train} -> V_{time}`: Markdown in
+    [markdown/v_train_to_v_time.md](markdown/v_train_to_v_time.md), video in [X](x).
 
 ------------------------------------------------------------
 ## Purpose of these Networks
