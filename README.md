@@ -164,7 +164,7 @@ The script in `tmp_pt_input.txt` has commands for the processor tool:
 UNIX> cat tmp_pt_input.txt 
 ML tmp_network.txt
 ASV 0 0 1                      # It applies a spike train of 8 spikes.
-ASV 0 1 1
+ASV 0 1 1                      # "ASV" says to apply the value given in the 3rd argument (1).
 ASV 0 2 1
 ASV 0 3 1
 ASV 0 4 1
@@ -192,17 +192,17 @@ Let's take a look at the network in Figure 3(b) again:
 
 ![jpg/figure_03b.jpg](jpg/figure_03b.jpg)
 
-The script in `scripts/02_Train_To_V_Comp.sh` creates this network and then runs it
+The script in `scripts/02_Train_To_C_Val.sh` creates this network and then runs it
 using `RSC`, so that you can see the neurons' spiking behavior and charge values.
 
 ```
-UNIX> sh scripts/02_Train_To_V_Comp.sh   # Here's how you run it.
-usage: sh scripts/02_Train_To_V_Comp.sh M V os_framework - use -1 for V to not run
+UNIX> sh scripts/02_Train_To_C_Val.sh   # Here's how you run it.
+usage: sh scripts/02_Train_To_C_Val.sh M V os_framework - use -1 for V to not run
 
 # As you can see in this call, the spike train subtracts from C_value, so that at the
 # end, it contains the complement as its potential.
 #
-UNIX> sh scripts/02_Train_To_V_Comp.sh 8 3 $fro
+UNIX> sh scripts/02_Train_To_C_Val.sh 8 3 $fro
 Time       0(A)       1(S) 2(C_value) |       0(A)       1(S) 2(C_value)
    0          *          *          - |          0          0          0
    1          *          -          - |          0          0          7
@@ -213,7 +213,7 @@ Time       0(A)       1(S) 2(C_value) |       0(A)       1(S) 2(C_value)
    6          -          -          - |          0          0          5
    7          -          -          - |          0          0          5
    8          -          -          - |          0          0          5
-UNIX> sh scripts/02_Train_To_V_Comp.sh 8 5 $fro
+UNIX> sh scripts/02_Train_To_C_Val.sh 8 5 $fro
 Time       0(A)       1(S) 2(C_value) |       0(A)       1(S) 2(C_value)
    0          *          *          - |          0          0          0
    1          *          -          - |          0          0          7
@@ -224,7 +224,7 @@ Time       0(A)       1(S) 2(C_value) |       0(A)       1(S) 2(C_value)
    6          -          -          - |          0          0          3
    7          -          -          - |          0          0          3
    8          -          -          - |          0          0          3
-UNIX> sh scripts/02_Train_To_V_Comp.sh 8 8 $fro
+UNIX> sh scripts/02_Train_To_C_Val.sh 8 8 $fro
 Time       0(A)       1(S) 2(C_value) |       0(A)       1(S) 2(C_value)
    0          *          *          - |          0          0          0
    1          *          -          - |          0          0          7
