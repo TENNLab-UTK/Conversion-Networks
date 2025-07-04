@@ -182,7 +182,7 @@ UNIX>
 
 Let's take a look at the network in Figure 3(b) again:
 
-![jpg/figure_3b.jpg](jpg/figure_3b.jpg)
+![jpg/figure_03b.jpg](jpg/figure_03b.jpg)
 
 The script in `scripts/02_Train_To_V_Comp.sh` creates this network and then runs it
 using `RSC`, so that you can see the neurons' spiking behavior and charge values.
