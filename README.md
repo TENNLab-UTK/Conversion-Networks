@@ -101,6 +101,16 @@ Time 0(V_value) | 0(V_value)
    5          - |          4
    6          - |          4
    7          - |          4
+UNIX> sh scripts/01_Train_To_V_Val.sh  8 8 $fro
+Time 0(V_value) | 0(V_value)
+   0          - |          1
+   1          - |          2
+   2          - |          3
+   3          - |          4
+   4          - |          5
+   5          - |          6
+   6          - |          7       # We run it for 8 timesteps, because the maximum value of
+   7          - |          8       # 8 takes that many timesteps to accumulate from all the spikes.
 UNIX> 
 ```
 
@@ -115,13 +125,108 @@ Now, these scripts create three files:
 We can use these files to illustrate how the network works:
 
 ```
+UNIX> $fro/bin/network_tool           # First, use the network_tool to look at the network:
+FJ tmp_network.txt
+INFO
+Nodes:          1
+Edges:          0
+Inputs:         1
+Outputs:        1
+
+Input nodes:  0(V_value) 
+Hidden nodes: 
+Output nodes: 0(V_value) 
+NODES
+[ {"id":0,"name":"V_value","values":[9.0]} ]     # There's just one node.  Here it is.
+Q
 UNIX> $fro/bin/processor_tool_risp 
-ML tmp_network.txt
+ML tmp_network.txt                         # Load the network, which also instantiates the
+                                           # processor with the correct parameters.
 ASV 0 0 1    0 1 1    0 2 1                # Put a train of three spikes into the network.
-RUN 9
+RUN 8                                      # Run it for 8 timesteps.
 NCH
 Node 0(V_value) charge: 3                  # And you can see that neuron 0 has a potential of 3
 Q  
+UNIX> 
+```
+
+The script in `tmp_pt_input.txt` has commands for the processor tool:
+
+```
+UNIX> cat tmp_pt_input.txt 
+ML tmp_network.txt
+ASV 0 0 1                      # It applies a spike train of 8 spikes.
+ASV 0 1 1
+ASV 0 2 1
+ASV 0 3 1
+ASV 0 4 1
+ASV 0 5 1
+ASV 0 6 1
+ASV 0 7 1
+RSC 8                          # RSC stands for "run, show spike raster & charge info".
+UNIX> $fro/bin/processor_tool_risp < tmp_pt_input.txt
+Time 0(V_value) | 0(V_value)
+   0          - |          1
+   1          - |          2
+   2          - |          3
+   3          - |          4
+   4          - |          5
+   5          - |          6
+   6          - |          7
+   7          - |          8
+UNIX> 
+```
+
+------------------------------------------------------------
+### Converting spike trains to value complements with Figure 3(b)
+
+Let's take a look at the network in Figure 3(b) again:
+
+![jpg/figure_3b.jpg](jpg/figure_3b.jpg)
+
+The script in `scripts/02_Train_To_V_Comp.sh` creates this network and then runs it
+using `RSC`, so that you can see the neurons' spiking behavior and charge values.
+
+```
+UNIX> sh scripts/02_Train_To_V_Comp.sh   # Here's how you run it.
+usage: sh scripts/02_Train_To_V_Comp.sh M V os_framework - use -1 for V to not run
+
+# As you can see in this call, the spike train subtracts from C_value, so that at the
+# end, it contains the complement as its potential.
+#
+UNIX> sh scripts/02_Train_To_V_Comp.sh 8 3 $fro
+Time       0(A)       1(S) 2(C_value) |       0(A)       1(S) 2(C_value)
+   0          *          *          - |          0          0          0
+   1          *          -          - |          0          0          7
+   2          *          -          - |          0          0          6
+   3          -          -          - |          0          0          5
+   4          -          -          - |          0          0          5
+   5          -          -          - |          0          0          5
+   6          -          -          - |          0          0          5
+   7          -          -          - |          0          0          5
+   8          -          -          - |          0          0          5
+UNIX> sh scripts/02_Train_To_V_Comp.sh 8 5 $fro
+Time       0(A)       1(S) 2(C_value) |       0(A)       1(S) 2(C_value)
+   0          *          *          - |          0          0          0
+   1          *          -          - |          0          0          7
+   2          *          -          - |          0          0          6
+   3          *          -          - |          0          0          5
+   4          *          -          - |          0          0          4
+   5          -          -          - |          0          0          3
+   6          -          -          - |          0          0          3
+   7          -          -          - |          0          0          3
+   8          -          -          - |          0          0          3
+UNIX> sh scripts/02_Train_To_V_Comp.sh 8 8 $fro
+Time       0(A)       1(S) 2(C_value) |       0(A)       1(S) 2(C_value)
+   0          *          *          - |          0          0          0
+   1          *          -          - |          0          0          7
+   2          *          -          - |          0          0          6
+   3          *          -          - |          0          0          5
+   4          *          -          - |          0          0          4
+   5          *          -          - |          0          0          3
+   6          *          -          - |          0          0          2
+   7          *          -          - |          0          0          1
+   8          -          -          - |          0          0          0
 UNIX> 
 ```
 
