@@ -30,6 +30,7 @@ conversions):
 | `V_{value} -> C_{value}`| Figure 5        | [08_Time_to_complements](markdown/08_Time_to_complements.md)  | [X](x) |
 | `V_{value} -> C_{train}`| Figure 5        | [08_Time_to_complements](markdown/08_Time_to_complements.md)  | [X](x) |
 | Comparing spike counts  | Figure 14       | [09_Spike_Counts](markdown/09_Spike_Counts.md)                | [X](x) |
+| Magic classification network | Figures 16 and 17 | [10_Magic_Classification](markdown/10_Magic_Classification.md)                | [X](x) |
 
 
 ------------------------------------------------------------
