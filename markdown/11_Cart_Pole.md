@@ -116,7 +116,7 @@ As you can see, it matches the "O-Spike_C" line.  That will be true for every ob
 
 Now, the converted network is in Figure 22 of the paper:
 
-![../jpg/figure_20.jpg](../jpg/figure_20.jpg)
+![../jpg/figure_22.jpg](../jpg/figure_22.jpg)
 
 It has been set up so that the observations are received as values, and they are converted
 to spike trains that go into the original networks.  The subnetwork labeled "Figure 21"
