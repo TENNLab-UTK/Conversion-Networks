@@ -15,7 +15,7 @@ conversions):
 | Network                 | Figure in Paper | Markdown | Video |
 |-------------------------|-----------------|----------|-------|
 | `V_{train} -> V_{value}`| Figure 3        | README   | [X](x) |
-| `V_{train} -> V_{time}` | Figure 7        | [markdown/03_Train_to_V_Time.md](markdown/03_Train_to_V_Time.md)| [X](x) |
+| `V_{train} -> V_{time}` | Figure 7        | [03_Train_to_V_Time](markdown/03_Train_to_V_Time.md)| [X](x) |
 |-------------------------|-----------------|----------|-------|
 
 Fred.
