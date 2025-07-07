@@ -9,15 +9,22 @@ if/when the paper is accepted for publication and published.
 ## Markdown Files and Videos
 
 I have the information about these networks and examples of running them in markdown files
-and videos.  They are as follows:
+and videos.  They are as follows (you'll note, some markdown files / videos cover multiple
+conversions):
 
-- `V_{train} -> V_{value}` and `V_{train} -> C_{value}`: This README and the video in [X](x).
-- `V_{train} -> V_{time}`: Markdown in
-    [markdown/v_train_to_v_time.md](markdown/v_train_to_v_time.md), video in [X](x).
-- `V_{train} -> C_{time}` and `V_{train} -> C_{train}`: 
-    [markdown/v_train_to_c_time.md](markdown/v_train_to_c_time.md), video in [X](x).
+- `V_{train} -> V_{value}`: This README and the video in [X](x).
+- `V_{train} -> V_{time}`:
+   Markdown in [markdown/03_Train_to_V_Time.md](markdown/03_Train_to_V_Time.md), video in [X](x).
+- `V_{train} -> C_{value}`: This README and the video in [X](x).
+- `V_{train} -> C_{time}`:
+   Markdown in [markdown/04_Train_to_C_Time.md](markdown/04_Train_to_C_Time.md), video in [X](x).
+- `V_{train} -> C_{train}`:
+   Markdown in [markdown/04_Train_to_C_Time.md](markdown/04_Train_to_C_Time.md), video in [X](x).
 
-
+- `V_{time} -> V_{train}`:
+   Markdown in [markdown/05_Time_to_V_Train.md](markdown/05_Time_to_V_Train.md), video in [X](x).
+- `V_{time} -> V_{value}`:
+   Markdown in [markdown/05_Time_to_V_Train.md](markdown/05_Time_to_V_Train.md), video in [X](x).
 
 ------------------------------------------------------------
 ## Purpose of these Networks
