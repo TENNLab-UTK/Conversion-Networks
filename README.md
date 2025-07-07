@@ -14,6 +14,10 @@ and videos.  They are as follows:
 - `V_{train} -> V_{value}` and `V_{train} -> C_{value}`: This README and the video in [X](x).
 - `V_{train} -> V_{time}`: Markdown in
     [markdown/v_train_to_v_time.md](markdown/v_train_to_v_time.md), video in [X](x).
+- `V_{train} -> C_{time}` and `V_{train} -> C_{train}`: 
+    [markdown/v_train_to_c_time.md](markdown/v_train_to_c_time.md), video in [X](x).
+
+
 
 ------------------------------------------------------------
 ## Purpose of these Networks
@@ -75,7 +79,7 @@ In Figure 3 of the paper, we present a simple network to convert a value represe
 spike train, to a neuron that stores its value in its potential.  We present storing both
 the value and its complement.   Here are the two networks:
 
-![jpg/figure-03.jpg](jpg/figure-03.jpg)
+![jpg/figure_03.jpg](jpg/figure_03.jpg)
 
 Now, what we're going to do is demonstrate how the networks work.  I'm going to do this
 with some shell scripts that create networks using the `network_tool` from the 

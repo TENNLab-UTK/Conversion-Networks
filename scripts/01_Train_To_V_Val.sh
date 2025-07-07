@@ -39,7 +39,11 @@ cat $fro/params/risp_127.txt | sed 's/127/'$mp1'/g' > tmp_risp.txt
   
   ) | $fro/bin/network_tool
 
+# Exit if the value is -1
+
 if [ $v = -1 ]; then exit 0; fi
+
+# Create input for the processor tool
 
 ( echo ML tmp_network.txt
   i=0
@@ -49,6 +53,8 @@ if [ $v = -1 ]; then exit 0; fi
   done
   echo RSC $(($m))
 ) > tmp_pt_input.txt
+
+# Run the processor tool
 
 $fro/bin/processor_tool_risp < tmp_pt_input.txt
 

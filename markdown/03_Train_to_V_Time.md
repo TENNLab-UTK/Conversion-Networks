@@ -2,7 +2,7 @@
 
 This is Figure 7 in the paper:
 
-![../jpg/figure_7.jpg](../jpg/figure_7.jpg)
+![../jpg/figure_07.jpg](../jpg/figure_07.jpg)
 
 If you haven't done so already, I recommend going through the
 [main README for this repo](../README.md), and its 
@@ -34,7 +34,8 @@ UNIX>
 ```
 
 The important thing here is the spike on neuron 3 ("V_time").  It spikes on timestep
-*Val+1*.  When we try a value of 4, it spikes on timestep 5:
+*Val+1*.  So above, with a value of 3, it spikes on timestep 4.
+When we try a value of 4, it spikes on timestep 5:
 
 ```
 UNIX> sh scripts/03_Train_to_V_Time.sh 8 4 $fro
@@ -132,6 +133,3 @@ Time      0(E)      1(S)      2(F) 3(V_time) |      0(E)      1(S)      2(F) 3(V
    9         -         -         -         - |         0         0         0         0
 UNIX> 
 ```
-
-
-
