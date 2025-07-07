@@ -276,10 +276,10 @@ Finally, let's take a look at the processor_tool commands when Y equals 3 and N 
 UNIX> sh scripts/09_Spike_Counts.sh 8 3 2 $fro > /dev/null
 UNIX> cat tmp_pt_input.txt 
 ML tmp_network.txt
-ASV 0 0 1                   # We make Y spike three times.  This could be any times within the first 8 timesteps.
-ASV 0 1 1
+ASV 0 0 1                   # We apply three inputs with values of 1 to the CY neuron.
+ASV 0 1 1                   # These can arrive any time within the first 8 timesteps.
 ASV 0 2 1
-ASV 2 0 1                   # We make N spike twice.
+ASV 2 0 1                   # We apply two inputs with values of 1 to the CN neuron.
 ASV 2 1 1
 ASV 1 0 1                   # We make S spike once.
 RSC 19                      # Run it for 19 timesteps and see which of Y or N spikes:
