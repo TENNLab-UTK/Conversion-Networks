@@ -12,43 +12,25 @@ I have the information about these networks and examples of running them in mark
 and videos.  They are as follows (you'll note, some markdown files / videos cover multiple
 conversions):
 
-| Network                 | Figure in Paper | Markdown | Video |
-|-------------------------|-----------------|----------|-------|
-| `V_{train} -> V_{value}`| Figure 3        | README   | [X](x) |
-| `V_{train} -> V_{time}` | Figure 7        | [03_Train_to_V_Time](markdown/03_Train_to_V_Time.md)| [X](x) |
-|-------------------------|-----------------|----------|-------|
+| Network                 | Figure in Paper | Markdown                                                      | Video  |
+|-------------------------|-----------------|---------------------------------------------------------------|--------|
+| `V_{train} -> V_{value}`| Figure 3        | This README                                                   | [X](x) |
+| `V_{train} -> V_{time}` | Figure 7        | [03_Train_to_V_Time](markdown/03_Train_to_V_Time.md)          | [X](x) |
+| `V_{train} -> C_{value}`| Figure 3        | This README                                                   | [X](x) |
+| `V_{train} -> C_{time}` | Figure 8        | [04_Train_to_C_Time](markdown/04_Train_to_C_Time.md)          | [X](x) |
+| `V_{train} -> C_{train}`| Figure 8        | [04_Train_to_C_Time](markdown/04_Train_to_C_Time.md)          | [X](x) |
+| `V_{time} -> V_{train}` | Figure 4        | [05_Time_to_V_Train](markdown/05_Time_to_V_Train.md)          | [X](x) |
+| `V_{time} -> V_{value}` | Figure 4        | [05_Time_to_V_Train](markdown/05_Time_to_V_Train.md)          | [X](x) |
+| `V_{time} -> C_{time}`  | Figure 10       | [06_Time_to_complements](markdown/06_Time_to_complements.md)  | [X](x) |
+| `V_{time} -> C_{value}` | Figure 10       | [06_Time_to_complements](markdown/06_Time_to_complements.md)  | [X](x) |
+| `V_{time} -> C_{train}` | Figure 10       | [06_Time_to_complements](markdown/06_Time_to_complements.md)  | [X](x) |
+| `V_{value} -> V_{train}`| Figure 9        | [07_Value_to_V_Train](markdown/07_Value_to_V_Train.md)        | [X](x) |
+| `V_{value} -> V_{time}` | Figure 9        | [07_Value_to_V_Train](markdown/07_Value_to_V_Train.md)        | [X](x) |
+| `V_{value} -> C_{time}` | Figure 5        | [08_Time_to_complements](markdown/08_Time_to_complements.md)  | [X](x) |
+| `V_{value} -> C_{value}`| Figure 5        | [08_Time_to_complements](markdown/08_Time_to_complements.md)  | [X](x) |
+| `V_{value} -> C_{train}`| Figure 5        | [08_Time_to_complements](markdown/08_Time_to_complements.md)  | [X](x) |
+| Comparing spike counts  | Figure 14       | [09_Spike_Counts](markdown/09_Spike_Counts.md)                | [X](x) |
 
-Fred.
-
-- `V_{train} -> V_{time}`: Figure 7.
-   Markdown in [markdown/03_Train_to_V_Time.md](markdown/03_Train_to_V_Time.md), video in [X](x).
-- `V_{train} -> C_{value}`: Figure 3. This README and the video in [X](x).
-- `V_{train} -> C_{time}`: Figure 8.
-   Markdown in [markdown/04_Train_to_C_Time.md](markdown/04_Train_to_C_Time.md), video in [X](x).
-- `V_{train} -> C_{train}`: Figure 8.
-   Markdown in [markdown/04_Train_to_C_Time.md](markdown/04_Train_to_C_Time.md), video in [X](x).
-
-- `V_{time} -> V_{train}`: Figure 4.
-   Markdown in [markdown/05_Time_to_V_Train.md](markdown/05_Time_to_V_Train.md), video in [X](x).
-- `V_{time} -> V_{value}`: Figure 4.
-   Markdown in [markdown/05_Time_to_V_Train.md](markdown/05_Time_to_V_Train.md), video in [X](x).
-- `V_{time} -> C_{time}`: Figure 10.
-   Markdown in [markdown/06_Time_to_Complements.md](markdown/06_Time_to_Complements.md), video in [X](x).
-- `V_{time} -> C_{value}`: Figure 10.
-   Markdown in [markdown/06_Time_to_Complements.md](markdown/06_Time_to_Complements.md), video in [X](x).
-- `V_{time} -> C_{train}`: Figure 10.
-   Markdown in [markdown/06_Time_to_Complements.md](markdown/06_Time_to_Complements.md), video in [X](x).
-
-- `V_{value} -> V_{train}`: Figure 9.
-   Markdown in [markdown/07_Value_to_V_Train.md](markdown/07_Value_to_V_Train.md), video in [X](x).
-- `V_{value} -> V_{time}`: Figure 9.
-   Markdown in [markdown/07_Value_to_V_Train.md](markdown/07_Value_to_V_Train.md), video in [X](x).
-- `V_{value} -> C_{time}`: Figure 5.
-   Markdown in [markdown/08_Value_to_Complements.md](markdown/08_Value_to_Complements.md), video in [X](x).
-- `V_{value} -> C_{value}`: Figure 5.
-   Markdown in [markdown/08_Value_to_Complements.md](markdown/08_Value_to_Complements.md), video in [X](x).
-- `V_{value} -> C_{train}`: Figure 5.
-   Markdown in [markdown/08_Value_to_Complements.md](markdown/08_Value_to_Complements.md), video in [X](x).
 
 ------------------------------------------------------------
 ## Purpose of these Networks

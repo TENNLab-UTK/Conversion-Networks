@@ -17,7 +17,7 @@ you want to convert, and the open-source framework:
 ```
 UNIX> echo $fro
 /Users/plank/src/repos/framework-open
-UNIX> sh sh scripts/07_Value_to_V_Train.sh
+UNIX> sh scripts/07_Value_to_V_Train.sh
 usage: sh scripts/07_Value_to_V_Train.sh M V os_framework - use -1 for V to not run
 UNIX> sh scripts/07_Value_to_V_Train.sh 8 3 $fro
 

@@ -10,7 +10,7 @@ If you haven't done so already, I recommend going through the
 and how we walk through these networks.
 
 The main shell script for this network is 
-`scripts/06_Time_to_Complements.sh.sh`.  You call it with the maximum value *M*, the value
+`scripts/06_Time_to_Complements.sh`.  You call it with the maximum value *M*, the value
 you want to convert, and the open-source framework:
 
 ```
