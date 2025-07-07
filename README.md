@@ -25,6 +25,12 @@ conversions):
    Markdown in [markdown/05_Time_to_V_Train.md](markdown/05_Time_to_V_Train.md), video in [X](x).
 - `V_{time} -> V_{value}`:
    Markdown in [markdown/05_Time_to_V_Train.md](markdown/05_Time_to_V_Train.md), video in [X](x).
+- `V_{time} -> C_{time}`:
+   Markdown in [markdown/06_Time_to_Complements](markdown/06_Time_to_Complements), video in [X](x).
+- `V_{time} -> C_{value}`:
+   Markdown in [markdown/06_Time_to_Complements](markdown/06_Time_to_Complements), video in [X](x).
+- `V_{time} -> C_{train}`:
+   Markdown in [markdown/06_Time_to_Complements](markdown/06_Time_to_Complements), video in [X](x).
 
 ------------------------------------------------------------
 ## Purpose of these Networks
