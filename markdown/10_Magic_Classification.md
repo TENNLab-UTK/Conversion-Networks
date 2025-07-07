@@ -17,7 +17,7 @@ To use this network, you need to convert the features into spikes.  I have done 
 in the file [pt_inputs/magic_original.txt](pt_inputs/magic_original.txt), which has
 processor_tool commands to run the network.  In the comments of this file, I have
 the observations, how they are converted into spikes, the number of output spikes on the
-two output neurons, and the classification decision.  
+two output neurons, and the classification decision.
 You can see those by grepping for the word "Step" in that file.  Here are the first 5
 observations:
 
@@ -43,7 +43,7 @@ UNIX> grep Step pt_inputs/magic_original.txt | head -n 20
 # Step 0004. I-Spike-C: 12 7 23 7 5 26 34 30 2 25
 # Step 0004. O-Spike-C: 55 50
 # Step 0004. Action: 0
-UNIX> 
+UNIX>
 ```
 
 I'm not going to go into great detail on how the observations are converted into spikes, but
@@ -63,7 +63,7 @@ I'll go over a few examples so you get the gist.  In the magic dataset, the rang
 
 We are converting each feature into a number of spikes from 1 to 48.  So, consider
 the first observation, whose first feature is 25.5169.  Let's convert that to a number
-between 0 and 48 using the range [4.2835, 334.177]: 
+between 0 and 48 using the range [4.2835, 334.177]:
 
 48 * (25.5169 - 4.2835) / (334.177-4.2835) = 3.089492
 
@@ -85,11 +85,11 @@ The original magic network is shown in Figure 16 of the paper:
 
 ![../jpg/figure_16.jpg](../jpg/figure_16.jpg)
 
-We can run it using the processor_tool input in `pt_inputs/magic_original.txt`.  Let's 
+We can run it using the processor_tool input in `pt_inputs/magic_original.txt`.  Let's
 look at that briefly:
 
 ```
-UNIX> head -n 20 pt_inputs/magic_original.txt 
+UNIX> head -n 20 pt_inputs/magic_original.txt
 ML networks/magic_original_network.txt
 # Step 0000. Observations: 25.5169 7.0857 2.4082 0.668 0.4121 9.0383 9.5293 5.747 11.804 191.668
 CLEAR-A
@@ -110,7 +110,7 @@ AS 2 12 1
 AS 3 0 1
 AS 3 2 1
 AS 3 4 1
-UNIX> 
+UNIX>
 ```
 
 As you can see, it loads the network, and then does the 'AS' commands to spike the inputs
@@ -136,7 +136,7 @@ OC
 CLEAR-A
 # Step 0001. I-Spike-C: 3 3 6 29 21 22 29 27 23 17
 AS 0 0 1
-UNIX> 
+UNIX>
 ```
 
 Let's print out the first 2 lines of output.  As you can see, the output counts
@@ -146,7 +146,7 @@ match what's in the comments to the input file.
 UNIX> $fro/bin/processor_tool_risp < pt_inputs/magic_original.txt | head -n 10
 node 10 spike counts: 40
 node 11 spike counts: 42
-UNIX> 
+UNIX>
 ```
 
 Let's run the last 5 observations and make sure they match:
@@ -169,7 +169,7 @@ UNIX> grep O-Spike-C pt_inputs/magic_original.txt | tail -n 5
 # Step 3341. O-Spike-C: 48 58
 # Step 3342. O-Spike-C: 27 63
 # Step 3343. O-Spike-C: 58 60
-UNIX> 
+UNIX>
 ```
 
 ----------------
@@ -179,7 +179,7 @@ Now, the converted network looks as in Figure 17 of the paper:
 
 ![../jpg/figure_17.jpg](../jpg/figure_17.jpg)
 
-I have this network in file 
+I have this network in file
 [networks/magic_converted.txt](networks/magic_converted.txt).
 You can see that it's bigger than the original, and it has one more input, the S neuron:
 
@@ -190,20 +190,20 @@ Edges:        120
 Inputs:        10
 Outputs:        2
 
-Input nodes:  0 1 2 3 4 5 6 7 8 9 
-Output nodes: 10 11 
-UNIX> ( echo FJ networks/magic_converted.txt ; echo INFO ) | $fro/bin/network_tool | sed '/Hidden/d' 
+Input nodes:  0 1 2 3 4 5 6 7 8 9
+Output nodes: 10 11
+UNIX> ( echo FJ networks/magic_converted.txt ; echo INFO ) | $fro/bin/network_tool | sed '/Hidden/d'
 Nodes:        102
 Edges:        304
 Inputs:        11
 Outputs:        2
 
-Input nodes:  109(S) 110(CTime-0) 115(CTime-1) 120(CTime-2) 125(CTime-3) 130(CTime-4) 135(CTime-5) 140(CTime-6) 145(CTime-7) 150(CTime-8) 155(CTime-9) 
-Output nodes: 172(y) 173(n) 
-UNIX> 
+Input nodes:  109(S) 110(CTime-0) 115(CTime-1) 120(CTime-2) 125(CTime-3) 130(CTime-4) 135(CTime-5) 140(CTime-6) 145(CTime-7) 150(CTime-8) 155(CTime-9)
+Output nodes: 172(y) 173(n)
+UNIX>
 ```
 
-I have converted the processor_tool input from 
+I have converted the processor_tool input from
 `pt_inputs/magic_original.txt` to work with this network.  It is in
 [pt_inputs/magic_converted_pt.txt](pt_inputs/magic_converted_pt.txt).  Let's look and
 see how it processes the first observation:
@@ -225,7 +225,7 @@ ASV 150 0 7
 ASV 155 0 19
 RUN 361
 OC
-UNIX> 
+UNIX>
 ```
 
 You can see a few differences here from `pt_inputs/magic_original.txt`:
@@ -246,12 +246,12 @@ Let's run this for the first observation:
 UNIX> head -n 15 pt_inputs/magic_converted_pt.txt | $fro/bin/processor_tool_risp
 node 172(y) spike counts: 0
 node 173(n) spike counts: 1
-UNIX> 
+UNIX>
 ```
 
 That matches -- our previous network had 40 spikes on node 10 and 42 on node 11, which
-corresponds to a "N".  Let's show that nodes 10 and 11 spiked the correct amount
-of time.  To do that, I'm going to use the network_tool to add nodes 10 and 11 as
+corresponds to a "N".  Let's show that nodes 10 and 11 spiked the correct number
+of times.  To do that, I'm going to use the `network_tool` to add nodes 10 and 11 as
 output nodes, and save the resulting network to `tmp_network.txt`:
 
 ```
@@ -274,7 +274,7 @@ node 172(y) spike counts: 0
 node 173(n) spike counts: 1
 node 10 spike counts: 40
 node 11 spike counts: 42
-UNIX> 
+UNIX>
 ```
 
 They match!
@@ -289,7 +289,7 @@ to GSR 0 9 and just look at the outputs of the first RUN call:
 UNIX> sed 's/OC/GSR 0 9/' < pt_inputs/magic_original.txt | $fro/bin/processor_tool_risp | head -n 2
 0   INPUT  : 10111111010101010000000000000000000000000000000000000000000000000000000000000000000000000000000000010101010101010101010101010101
 9   INPUT  : 10000010000000001000100010001000100010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-UNIX> 
+UNIX>
 ```
 
 Now, let's do the same thing with the converted network:
@@ -298,12 +298,12 @@ Now, let's do the same thing with the converted network:
 UNIX> sed 's/OC/GSR 0 9/' < pt_inputs/magic_converted_pt.txt | $fro/bin/processor_tool_risp | head -n 2
 0             HIDDEN : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101111110101010100000000000000000000000000000000000000000000000000000000000000000000000000000000000101010101010101010101010101010101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 9             HIDDEN : 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000100000000010001000100010001000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-UNIX> 
+UNIX>
 ```
 
 Remember, we run the converted network for 361 timesteps instead of 128, and the input spikes
 start to arrive at the original input neurons at timestep 103.  And of course, we run it
-for extra timesteps.  So at a first glance, these look good.   
+for extra timesteps.  So at a first glance, these look good.
 To convince ourselves, we should instead isolate the 128 spikes starting at timestep 103,
 and make sure they match.  I do that in the video, but it's too cumbersome to put here.
 Suffice it to say that it works.
