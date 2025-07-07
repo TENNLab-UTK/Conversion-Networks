@@ -307,3 +307,83 @@ for extra timesteps.  So at a first glance, these look good.
 To convince ourselves, we should instead isolate the 128 spikes starting at timestep 103,
 and make sure they match.  I do that in the video, but it's too cumbersome to put here.
 Suffice it to say that it works.
+
+As a final test -- let's make sure that both networks produce the same classifications
+on all of the inputs.  For the original network, let's just use the "Action" lines:
+
+```
+UNIX> grep Action pt_inputs/magic_original.txt | head
+# Step 0000. Action: 1
+# Step 0001. Action: 0
+# Step 0002. Action: 0
+# Step 0003. Action: 0
+# Step 0004. Action: 0
+# Step 0005. Action: 0
+# Step 0006. Action: 0
+# Step 0007. Action: 0
+# Step 0008. Action: 0
+# Step 0009. Action: 1
+UNIX>
+```
+
+Get rid of everything but the last character:
+
+```
+UNIX> grep Action pt_inputs/magic_original.txt | sed 's/.* //' > tmp_orig.txt
+UNIX> head tmp_orig.txt
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+UNIX> 
+```
+
+Now run the converted network and put the output into `tmp_conv.txt`:
+
+```
+UNIX> $fro/bin/processor_tool_risp < pt_inputs/magic_converted_pt.txt > tmp_conv.txt
+UNIX> head !$
+node 172(y) spike counts: 0
+node 173(n) spike counts: 1
+node 172(y) spike counts: 1
+node 173(n) spike counts: 0
+node 172(y) spike counts: 1
+node 173(n) spike counts: 0
+node 172(y) spike counts: 1
+node 173(n) spike counts: 0
+node 172(y) spike counts: 1
+node 173(n) spike counts: 0
+UNIX> 
+```
+
+Now, let's isolate the lines that end with 1, and then change the lines with 172 to 0
+and the lines with 173 to 1:
+
+```
+UNIX> grep '1$' < tmp_conv.txt | sed 's/.*172.*/0/' | sed 's/.*173.*/1/' > tmp_conv_2.txt
+UNIX> head !$
+head tmp_conv_2.txt
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+UNIX>
+```
+
+When we compare this last file to the one we created from the original, they match exactly!
+
+```
+UNIX> diff tmp_conv_2.txt tmp_orig.txt
+```

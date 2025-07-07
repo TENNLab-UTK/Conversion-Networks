@@ -1,0 +1,396 @@
+{
+  "Associated_Data": {
+    "other": {
+      "proc_name": "risp"
+    },
+    "proc_params": {
+      "discrete": true,
+      "max_delay": 64,
+      "max_threshold": 127,
+      "max_weight": 127,
+      "min_potential": -127,
+      "min_threshold": 1,
+      "min_weight": -127
+    }
+  },
+  "Edges": [
+    {
+      "from": 4,
+      "to": 6,
+      "values": [
+        -66.0,
+        46.0
+      ]
+    },
+    {
+      "from": 1,
+      "to": 11,
+      "values": [
+        -62.0,
+        37.0
+      ]
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "values": [
+        -90.0,
+        9.0
+      ]
+    },
+    {
+      "from": 0,
+      "to": 3,
+      "values": [
+        -61.0,
+        8.0
+      ]
+    },
+    {
+      "from": 51,
+      "to": 49,
+      "values": [
+        112.0,
+        52.0
+      ]
+    },
+    {
+      "from": 3,
+      "to": 3,
+      "values": [
+        58.0,
+        18.0
+      ]
+    },
+    {
+      "from": 1,
+      "to": 5,
+      "values": [
+        75.0,
+        33.0
+      ]
+    },
+    {
+      "from": 1,
+      "to": 51,
+      "values": [
+        -94.0,
+        29.0
+      ]
+    },
+    {
+      "from": 7,
+      "to": 7,
+      "values": [
+        100.0,
+        21.0
+      ]
+    },
+    {
+      "from": 1,
+      "to": 12,
+      "values": [
+        0.0,
+        23.0
+      ]
+    },
+    {
+      "from": 49,
+      "to": 12,
+      "values": [
+        -116.0,
+        9.0
+      ]
+    },
+    {
+      "from": 1,
+      "to": 8,
+      "values": [
+        79.0,
+        60.0
+      ]
+    },
+    {
+      "from": 5,
+      "to": 12,
+      "values": [
+        28.0,
+        40.0
+      ]
+    },
+    {
+      "from": 7,
+      "to": 0,
+      "values": [
+        -19.0,
+        39.0
+      ]
+    },
+    {
+      "from": 6,
+      "to": 9,
+      "values": [
+        62.0,
+        1.0
+      ]
+    },
+    {
+      "from": 3,
+      "to": 2,
+      "values": [
+        -86.0,
+        41.0
+      ]
+    },
+    {
+      "from": 0,
+      "to": 5,
+      "values": [
+        107.0,
+        14.0
+      ]
+    },
+    {
+      "from": 90,
+      "to": 5,
+      "values": [
+        -11.0,
+        37.0
+      ]
+    },
+    {
+      "from": 5,
+      "to": 2,
+      "values": [
+        58.0,
+        28.0
+      ]
+    },
+    {
+      "from": 6,
+      "to": 12,
+      "values": [
+        -109.0,
+        20.0
+      ]
+    },
+    {
+      "from": 2,
+      "to": 90,
+      "values": [
+        56.0,
+        5.0
+      ]
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "values": [
+        -93.0,
+        15.0
+      ]
+    },
+    {
+      "from": 12,
+      "to": 8,
+      "values": [
+        86.0,
+        23.0
+      ]
+    },
+    {
+      "from": 2,
+      "to": 11,
+      "values": [
+        53.0,
+        43.0
+      ]
+    },
+    {
+      "from": 7,
+      "to": 4,
+      "values": [
+        -106.0,
+        26.0
+      ]
+    },
+    {
+      "from": 4,
+      "to": 1,
+      "values": [
+        16.0,
+        62.0
+      ]
+    },
+    {
+      "from": 8,
+      "to": 90,
+      "values": [
+        115.0,
+        46.0
+      ]
+    },
+    {
+      "from": 51,
+      "to": 9,
+      "values": [
+        -62.0,
+        29.0
+      ]
+    },
+    {
+      "from": 9,
+      "to": 12,
+      "values": [
+        102.0,
+        58.0
+      ]
+    },
+    {
+      "from": 11,
+      "to": 0,
+      "values": [
+        -47.0,
+        13.0
+      ]
+    }
+  ],
+  "Inputs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "Network_Values": [],
+  "Nodes": [
+    {
+      "id": 6,
+      "values": [
+        11.0
+      ]
+    },
+    {
+      "id": 0,
+      "values": [
+        16.0
+      ]
+    },
+    {
+      "id": 12,
+      "values": [
+        67.0
+      ]
+    },
+    {
+      "id": 51,
+      "values": [
+        44.0
+      ]
+    },
+    {
+      "id": 11,
+      "values": [
+        95.0
+      ]
+    },
+    {
+      "id": 49,
+      "values": [
+        66.0
+      ]
+    },
+    {
+      "id": 7,
+      "values": [
+        114.0
+      ]
+    },
+    {
+      "id": 1,
+      "values": [
+        101.0
+      ]
+    },
+    {
+      "id": 90,
+      "values": [
+        37.0
+      ]
+    },
+    {
+      "id": 3,
+      "values": [
+        6.0
+      ]
+    },
+    {
+      "id": 8,
+      "values": [
+        1.0
+      ]
+    },
+    {
+      "id": 2,
+      "values": [
+        45.0
+      ]
+    },
+    {
+      "id": 9,
+      "values": [
+        1.0
+      ]
+    },
+    {
+      "id": 4,
+      "values": [
+        119.0
+      ]
+    },
+    {
+      "id": 5,
+      "values": [
+        75.0
+      ]
+    }
+  ],
+  "Outputs": [
+    8,
+    9
+  ],
+  "Properties": {
+    "edge_properties": [
+      {
+        "index": 1,
+        "max_value": 64.0,
+        "min_value": 1.0,
+        "name": "Delay",
+        "size": 1,
+        "type": 73
+      },
+      {
+        "index": 0,
+        "max_value": 127.0,
+        "min_value": -127.0,
+        "name": "Weight",
+        "size": 1,
+        "type": 73
+      }
+    ],
+    "network_properties": [],
+    "node_properties": [
+      {
+        "index": 0,
+        "max_value": 127.0,
+        "min_value": 1.0,
+        "name": "Threshold",
+        "size": 1,
+        "type": 73
+      }
+    ]
+  }
+}
