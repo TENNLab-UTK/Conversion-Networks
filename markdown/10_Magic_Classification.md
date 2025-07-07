@@ -177,7 +177,7 @@ UNIX>
 
 Now, the converted network looks as in Figure 17 of the paper:
 
-![../jpg/figure_16.jpg](../jpg/figure_16.jpg)
+![../jpg/figure_17.jpg](../jpg/figure_17.jpg)
 
 I have this network in file 
 [networks/magic_converted.txt](networks/magic_converted.txt).
