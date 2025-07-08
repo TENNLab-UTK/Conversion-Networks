@@ -121,7 +121,7 @@ Now, the converted network is in Figure 22 of the paper:
 It has been set up so that the observations are received as values, and they are converted
 to spike trains that go into the original networks.  The subnetwork labeled "Figure 21"
 isolates the spikes on L and R from timesteps 33 through 56, and then the subnetwork
-labeled Figure 14 counds them and compares them.  
+labeled Figure 14 counts them and compares them.  
 
-
+This network is in [networks/pole_converted.txt](networks/pole_converted.txt).
 
