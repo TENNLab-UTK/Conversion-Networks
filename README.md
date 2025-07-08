@@ -24,11 +24,11 @@ conversions):
 | `V_{time} -> C_{time}`  | Figure 10       | [06_Time_to_Complements](markdown/06_Time_to_Complements.md)  | [https://youtu.be/x5FoeazLcso](https://youtu.be/x5FoeazLcso) |
 | `V_{time} -> C_{value}` | Figure 10       | [06_Time_to_Complements](markdown/06_Time_to_Complements.md)  | [https://youtu.be/x5FoeazLcso](https://youtu.be/x5FoeazLcso) |
 | `V_{time} -> C_{train}` | Figure 10       | [06_Time_to_Complements](markdown/06_Time_to_Complements.md)  | [https://youtu.be/x5FoeazLcso](https://youtu.be/x5FoeazLcso) |
-| `V_{value} -> V_{train}`| Figure 9        | [07_Value_to_V_Train](markdown/07_Value_to_V_Train.md)        | [X](x) |
-| `V_{value} -> V_{time}` | Figure 9        | [07_Value_to_V_Train](markdown/07_Value_to_V_Train.md)        | [X](x) |
-| `V_{value} -> C_{time}` | Figure 5        | [08_Time_to_Complements](markdown/08_Time_to_Complements.md)  | [X](x) |
-| `V_{value} -> C_{value}`| Figure 5        | [08_Time_to_Complements](markdown/08_Time_to_Complements.md)  | [X](x) |
-| `V_{value} -> C_{train}`| Figure 5        | [08_Time_to_Complements](markdown/08_Time_to_Complements.md)  | [X](x) |
+| `V_{value} -> V_{train}`| Figure 9        | [07_Value_to_V_Train](markdown/07_Value_to_V_Train.md)        | [https://youtu.be/vXor3uGTXWM](https://youtu.be/vXor3uGTXWM) |
+| `V_{value} -> V_{time}` | Figure 9        | [07_Value_to_V_Train](markdown/07_Value_to_V_Train.md)        | [https://youtu.be/vXor3uGTXWM](https://youtu.be/vXor3uGTXWM) |
+| `V_{value} -> C_{time}` | Figure 5        | [08_Value_to_Complements](markdown/08_Value_to_Complements.md)  | [X](x) |
+| `V_{value} -> C_{value}`| Figure 5        | [08_Value_to_Complements](markdown/08_Value_to_Complements.md)  | [X](x) |
+| `V_{value} -> C_{train}`| Figure 5        | [08_Value_to_Complements](markdown/08_Value_to_Complements.md)  | [X](x) |
 | Comparing spike counts  | Figure 14       | [09_Spike_Counts](markdown/09_Spike_Counts.md)                | [X](x) |
 | Magic classification network | Figures 16 and 17 | [10_Magic_Classification](markdown/10_Magic_Classification.md)                | [X](x) |
 | Cart-Pole control network    | Figures 20 and 22 | [11_Cart_Pole](markdown/11_Cart_Pole.md)                | [X](x) |
