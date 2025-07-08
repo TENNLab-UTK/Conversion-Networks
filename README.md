@@ -14,9 +14,9 @@ conversions):
 
 | Network                 | Figure in Paper | Markdown                                                      | Video  |
 |-------------------------|-----------------|---------------------------------------------------------------|--------|
-| `V_{train} -> V_{value}`| Figure 3        | This README                                                   | [X](x) |
+| `V_{train} -> V_{value}`| Figure 3        | This README                                                   | [https://youtu.be/shubU9zfBAA](https://youtu.be/shubU9zfBAA) |
 | `V_{train} -> V_{time}` | Figure 7        | [03_Train_to_V_Time](markdown/03_Train_to_V_Time.md)          | [X](x) |
-| `V_{train} -> C_{value}`| Figure 3        | This README                                                   | [X](x) |
+| `V_{train} -> C_{value}`| Figure 3        | This README                                                   | [https://youtu.be/shubU9zfBAA](https://youtu.be/shubU9zfBAA) |
 | `V_{train} -> C_{time}` | Figure 8        | [04_Train_to_C_Time](markdown/04_Train_to_C_Time.md)          | [X](x) |
 | `V_{train} -> C_{train}`| Figure 8        | [04_Train_to_C_Time](markdown/04_Train_to_C_Time.md)          | [X](x) |
 | `V_{time} -> V_{train}` | Figure 4        | [05_Time_to_V_Train](markdown/05_Time_to_V_Train.md)          | [X](x) |
