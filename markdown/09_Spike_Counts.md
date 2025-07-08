@@ -1,5 +1,7 @@
 # Case Study: Network to Compare Spike Counts on Two output Neurons
 
+The video for this markdown file is in [https://youtu.be/xXL_4slMYvs](https://youtu.be/xXL_4slMYvs).
+
 This illustrates the network from the section of the paper entitled: "Case Study:
 Comparing Spike Counts".
 
@@ -34,7 +36,7 @@ In this markdown file (and video), we go through examples of running this networ
 
 If you haven't done so already, I recommend going through the
 [main README for this repo](../README.md), and its 
-[accompanying video](X).  That will get you familiar with RISP, the open-source framework,
+[accompanying video](https://youtu.be/shubU9zfBAA).  That will get you familiar with RISP, the open-source framework,
 and how we walk through these networks.
 
 The shell script for this network is 

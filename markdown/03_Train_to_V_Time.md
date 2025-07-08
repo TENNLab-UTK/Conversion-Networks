@@ -1,12 +1,14 @@
 # Network to convert a spike train to a time: V_{train} -> V_{time}
 
+The video for this markdown file is in [https://youtu.be/d-BJp2m0WDI](https://youtu.be/d-BJp2m0WDI).
+
 This is Figure 7 in the paper:
 
 ![../jpg/figure_07.jpg](../jpg/figure_07.jpg)
 
 If you haven't done so already, I recommend going through the
 [main README for this repo](../README.md), and its 
-[accompanying video](X).  That will get you familiar with RISP, the open-source framework,
+[accompanying video](https://youtu.be/shubU9zfBAA).  That will get you familiar with RISP, the open-source framework,
 and how we walk through these networks.
 
 The main shell script for this network is 

@@ -31,7 +31,7 @@ conversions):
 | `V_{value} -> C_{train}`| Figure 5        | [08_Value_to_Complements](markdown/08_Value_to_Complements.md)  | [https://youtu.be/I1khKOplWVg](https://youtu.be/I1khKOplWVg) |
 | Comparing spike counts  | Figure 14       | [09_Spike_Counts](markdown/09_Spike_Counts.md)                  | [https://youtu.be/xXL_4slMYvs](https://youtu.be/xXL_4slMYvs) |
 | Magic classification network | Figures 16 and 17 | [10_Magic_Classification](markdown/10_Magic_Classification.md) | [https://youtu.be/Qe6yHSXFBVc](https://youtu.be/Qe6yHSXFBVc) |
-| Cart-Pole control network    | Figures 20 and 22 | [11_Cart_Pole](markdown/11_Cart_Pole.md)                | [X](x) |
+| Cart-Pole control network    | Figures 20 and 22 | [11_Cart_Pole](markdown/11_Cart_Pole.md)                | [https://youtu.be/1nSo9RZm6nA](https://youtu.be/1nSo9RZm6nA) |
 
 
 ------------------------------------------------------------

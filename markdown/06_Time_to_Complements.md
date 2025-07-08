@@ -1,12 +1,14 @@
 # Network to convert a time to its complement in all three encodings: V_{time} -> C_{value}, V_{time} -> C_{time} and V_{time} -> C_{train}
 
+The video for this markdown file is in [https://youtu.be/x5FoeazLcso](https://youtu.be/x5FoeazLcso).
+
 This is Figure 10 in the paper:
 
 ![../jpg/figure_10.jpg](../jpg/figure_10.jpg)
 
 If you haven't done so already, I recommend going through the
 [main README for this repo](../README.md), and its 
-[accompanying video](X).  That will get you familiar with RISP, the open-source framework,
+[accompanying video](https://youtu.be/shubU9zfBAA).  That will get you familiar with RISP, the open-source framework,
 and how we walk through these networks.
 
 The main shell script for this network is 

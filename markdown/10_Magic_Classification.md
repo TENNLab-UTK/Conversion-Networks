@@ -1,5 +1,17 @@
 # Experiment: Classification/Inference with the Magic Dataset
 
+The video for this markdown file is in [https://youtu.be/Qe6yHSXFBVc](https://youtu.be/Qe6yHSXFBVc).
+
+-----------
+
+If you haven't done so already, I recommend going through the
+[main README for this repo](../README.md), and its
+[accompanying video](https://youtu.be/shubU9zfBAA).  That will get you familiar with RISP, the open-source framework,
+and how we walk through these networks.
+
+-----------
+
+
 This illustrates the network from the section of the paper entitled: "Experiment:
 Inference with the Magic Dataset."
 
