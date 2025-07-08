@@ -278,3 +278,14 @@ UNIX> diff tmp_orig.txt tmp_converted.txt
 UNIX> 
 ```
 
+------------------------------------------------------------
+### Performance on FPGA
+
+As before, we show the performance on the Basys 3 Artix-7 FPGA board, with
+a Raspberry Pi RP2040 Pico microcontroller acting as the host.  Here is table 6,
+replicated from the paper:
+
+![../jpg/table_06.jpg](../jpg/table_06.jpg)
+
+Once again, the reduction in communication improves perfromance greatly, here by a
+factor of 4.31.
