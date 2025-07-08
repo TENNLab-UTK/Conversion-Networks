@@ -21,14 +21,14 @@ conversions):
 | `V_{train} -> C_{train}`| Figure 8        | [04_Train_to_C_Time](markdown/04_Train_to_C_Time.md)          | [https://youtu.be/vjWfsDhbm54](https://youtu.be/vjWfsDhbm54) |
 | `V_{time} -> V_{train}` | Figure 4        | [05_Time_to_V_Train](markdown/05_Time_to_V_Train.md)          | [https://youtu.be/xlB4ZxbSuXQ](https://youtu.be/xlB4ZxbSuXQ) |
 | `V_{time} -> V_{value}` | Figure 4        | [05_Time_to_V_Train](markdown/05_Time_to_V_Train.md)          | [https://youtu.be/xlB4ZxbSuXQ](https://youtu.be/xlB4ZxbSuXQ) |
-| `V_{time} -> C_{time}`  | Figure 10       | [06_Time_to_complements](markdown/06_Time_to_complements.md)  | [X](x) |
-| `V_{time} -> C_{value}` | Figure 10       | [06_Time_to_complements](markdown/06_Time_to_complements.md)  | [X](x) |
-| `V_{time} -> C_{train}` | Figure 10       | [06_Time_to_complements](markdown/06_Time_to_complements.md)  | [X](x) |
+| `V_{time} -> C_{time}`  | Figure 10       | [06_Time_to_Complements](markdown/06_Time_to_Complements.md)  | [X](x) |
+| `V_{time} -> C_{value}` | Figure 10       | [06_Time_to_Complements](markdown/06_Time_to_Complements.md)  | [X](x) |
+| `V_{time} -> C_{train}` | Figure 10       | [06_Time_to_Complements](markdown/06_Time_to_Complements.md)  | [X](x) |
 | `V_{value} -> V_{train}`| Figure 9        | [07_Value_to_V_Train](markdown/07_Value_to_V_Train.md)        | [X](x) |
 | `V_{value} -> V_{time}` | Figure 9        | [07_Value_to_V_Train](markdown/07_Value_to_V_Train.md)        | [X](x) |
-| `V_{value} -> C_{time}` | Figure 5        | [08_Time_to_complements](markdown/08_Time_to_complements.md)  | [X](x) |
-| `V_{value} -> C_{value}`| Figure 5        | [08_Time_to_complements](markdown/08_Time_to_complements.md)  | [X](x) |
-| `V_{value} -> C_{train}`| Figure 5        | [08_Time_to_complements](markdown/08_Time_to_complements.md)  | [X](x) |
+| `V_{value} -> C_{time}` | Figure 5        | [08_Time_to_Complements](markdown/08_Time_to_Complements.md)  | [X](x) |
+| `V_{value} -> C_{value}`| Figure 5        | [08_Time_to_Complements](markdown/08_Time_to_Complements.md)  | [X](x) |
+| `V_{value} -> C_{train}`| Figure 5        | [08_Time_to_Complements](markdown/08_Time_to_Complements.md)  | [X](x) |
 | Comparing spike counts  | Figure 14       | [09_Spike_Counts](markdown/09_Spike_Counts.md)                | [X](x) |
 | Magic classification network | Figures 16 and 17 | [10_Magic_Classification](markdown/10_Magic_Classification.md)                | [X](x) |
 | Cart-Pole control network    | Figures 20 and 22 | [11_Cart_Pole](markdown/11_Cart_Pole.md)                | [X](x) |
