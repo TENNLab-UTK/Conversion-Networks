@@ -387,3 +387,25 @@ When we compare this last file to the one we created from the original, they mat
 ```
 UNIX> diff tmp_conv_2.txt tmp_orig.txt
 ```
+
+---------------
+## Performance Results
+
+These are communicated in the paper, but I'll replicate them here.  The neuroprocessor is
+running on a Basys 3 Artix-7 FPGA board, that has been configured with the 
+[RISP Open-Source FPGA](https://github.com/TENNLab-UTK/fpga) 
+to run the two classification networks.   The host is a Raspberry Pi RP2040 Pico
+microcontroller communicating with the FPGA over Uart.  Here are the performance results
+of performing classification on the 3343 testing observations (this is Table 4 in the paper).
+
+![../jpg/table_04.jpg](../jpg/table_04.jpg)
+
+As you can see, the setup, which is not atypical for embedded neuromorphic systems, penalizes
+communication heavily.  Therefore, the converted network shows a massive improvement of 23.4x
+in speed.
+
+Now, you may be thinking, "Can't we just change the communication to do better buffering or
+to aggregate inputs and outputs?"  That's a great thought, and it would indeed improve the
+performance of the original.  However, having the network improve the communication puts less
+burden on the neuroprocessor, and often users do not have the ability to modify the neuroprocessor.
+So this is a nice way to improve performance.
