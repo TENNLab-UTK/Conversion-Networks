@@ -23,7 +23,7 @@ there were not an equal number of observations in each category.  So our smaller
 do have an equal number of observations in each category.
 
 We trained a network, which is in
-[networks/magic_original_network.txt](networks/magic_original_network.txt) that gets
+[networks/magic_original_network.txt](../networks/magic_original_network.txt) that gets
 an F1 score of 0.832 on the testing dataset.
 To use this network, you need to convert the features into spikes.  I have done that
 in the file [pt_inputs/magic_original.txt](pt_inputs/magic_original.txt), which has

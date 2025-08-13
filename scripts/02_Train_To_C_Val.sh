@@ -46,7 +46,9 @@ cat $fro/params/risp_127.txt | sed 's/127/'$mp1'/g' > tmp_risp.txt
   echo SORT Q
   echo TJ tmp_network.txt
   
-  ) | $fro/bin/network_tool
+  ) > tmp_network_tool.txt
+
+$fro/bin/network_tool < tmp_network_tool.txt
 
 if [ $v = -1 ]; then exit 0; fi
 
