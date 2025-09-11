@@ -2,7 +2,7 @@
 
 James S. Plank
 
-This repo is a companion to the paper, "Converting Between Times, Values and Spike Trains in Spiking Neural Networks", by Plank, Rizzo, Gullett, Dent and Schuman.  I'll have more information here
+This repo is a companion to the paper, ["Alleviating the Communication Bottleneck in Neuromorphic Computing with Custom-Designed Spiking Neural Networks"](https://neuromorphic.eecs.utk.edu/publications/2025-09-08-alleviating-the-communication-bottleneck-in-neuromorphic-computing-with-custom-designed-spiking-neural-networks/)[1], by Plank, Rizzo, Gullett, Dent and Schuman.  I'll have more information here
 if/when the paper is accepted for publication and published.
 
 ------------------------------------------------------------
@@ -258,5 +258,12 @@ Time       0(A)       1(S) 2(C_value) |       0(A)       1(S) 2(C_value)
    8          -          -          - |          0          0          0
 UNIX> 
 ```
+
+------------------------------------------------------------
+### Reference:
+
+1.  James S. Plank, Charles P. Rizzo, Bryson Gullett, Keegan E. M. Dent and Catherine D. Schuman,
+"Alleviating the Communication Bottleneck in Neuromorphic Computing with Custom-Designed Spiking Neural Networks,"  Journal of Low Power Electronics and Applications (Open access), September, 2025.
+
 
 
